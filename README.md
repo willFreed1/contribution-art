@@ -22,6 +22,31 @@ This is what the GitHub contribution graph looks like (for 2022):
 - The script pushes to the `main` branch to reflect on your profile
 
 ---
+## ▶️ How to Run the Script
+
+1. Make sure your GitHub repository is **empty** (no README, etc.)
+
+2. Open Git Bash or your terminal and run:
+
+```bash
+chmod +x contribution-art.sh
+./contribution-art.sh
+```
+Wait until the script finishes. It may take a few minutes depending on commit count.
+Once finished, check if commits were generated:
+
+```bash
+cd contribution-art
+git log --oneline | wc -l
+```
+You should see hundreds of commits if it worked.
+
+Push your changes to GitHub:
+
+```bash
+git push origin main
+```
+
 
 ## 🖌 Customize the Drawing
 
